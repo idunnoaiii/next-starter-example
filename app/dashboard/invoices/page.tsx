@@ -6,6 +6,7 @@ import { lusitana } from '@/app/ui/fonts'
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons'
 import { Suspense } from 'react'
 import { fetchInvoicesPages } from '@/app/lib/data'
+import ErrorBoundary from 'next/dist/client/components/error-boundary'
 
 export default async function Page(props: {
   searchParams?: Promise<{
